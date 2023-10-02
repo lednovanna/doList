@@ -1,12 +1,12 @@
 import {Component} from "react";
-import chek from './chek.jpg';
+import chek from './mark.jpg';
 
 export class TodoList extends Component {
     state = {
         userInput: "",
         todolist: [],
     }
-}
+
 
 onChangeEvent(e) {
     this.setState({userInput: e})
@@ -31,7 +31,7 @@ deleteItem() {
 
 crossedWord(event) {
     const li = event.target;
-    li.classList.toggler('crossed');
+    li.classList.toggle('crossed');
 }
 
 onFormSubmit(e) {
@@ -62,9 +62,10 @@ render () {
                             ))}
                         </ul>
                         <div className ="container">
-                            <button onClick={() => this.deleteItem()} classNmae="delete">Delete</button>
+                            <button onClick={() => this.deleteItem()} className="delete">Delete</button>
                         </div>
             </form>
         </div>
     )
+} 
 }

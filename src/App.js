@@ -1,7 +1,7 @@
 import './App.css';
-import image from './todo.jpg';
-import imageTwo from './todoList';
-import {todoList} from './todoList';
+import image from './done.jpg';
+import imageTwo from './man.jpg';
+import {TodoList} from './TodoList';
   
 function App () {
   return (
@@ -12,7 +12,7 @@ function App () {
       <div className="container">
         <h1>Grocery List</h1>
       </div>
-      <todoList/>
+      <TodoList/>
       <div className="container">
         <img src = {imageTwo} alt="man" width = "250px"/>
       </div>
